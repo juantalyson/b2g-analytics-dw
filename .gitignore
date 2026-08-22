@@ -1,5 +1,6 @@
-cat > .gitignore << 'EOF'
-# Dados — nunca versionar
+# ---------------------------------------------------------------
+# Dados brutos e derivados - nunca versionar (repositorio publico)
+# ---------------------------------------------------------------
 data/**
 !data/raw/
 !data/interim/
@@ -7,6 +8,7 @@ data/**
 !data/**/.gitkeep
 *.csv
 *.zip
+*.gz
 *.parquet
 
 # Power BI
@@ -17,12 +19,32 @@ data/**
 __pycache__/
 *.py[cod]
 .venv/
+venv/
 .ipynb_checkpoints/
+.pytest_cache/
+*.egg-info/
 
-# Segredos
+# ---------------------------------------------------------------
+# Segredos e credenciais
+# ---------------------------------------------------------------
 .env
+.env.*
+!.env.example
 *.pgpass
+.pgpass
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
 
-# Editor
+# Logs
+*.log
+
+# Editor / SO
 .vscode/
-EOF
+.idea/
+.DS_Store
+Thumbs.db
