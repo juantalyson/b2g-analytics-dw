@@ -25,23 +25,25 @@ Cada pacote diário contém 11 arquivos CSV. Tamanhos observados em
 
 ## Decisão
 
-Carregar quatro arquivos: `Empenho`, `ItemEmpenho`, `Pagamento` e
-`Pagamento_EmpenhosImpactados`.
+Carregar seis arquivos: `Empenho`, `ItemEmpenho`, `Pagamento`,
+`Pagamento_EmpenhosImpactados`, `Liquidacao` e
+`Liquidacao_EmpenhosImpactados`.
 
 Descartar: `ListaBancos`, `ListaPrecatorios`, `ListaFaturas`,
-`FavorecidosFinais`, `ItemEmpenhoHistorico`, `Liquidacao` e
-`Liquidacao_EmpenhosImpactados`.
+`FavorecidosFinais` e `ItemEmpenhoHistorico`.
 
 ## Consequência
 
-- **Negativa e assumida:** sem os arquivos de liquidação, a pergunta 7
-  (lead time entre fases) é respondida apenas no trecho
-  empenho → pagamento. A fase intermediária de liquidação fica fora.
-  Decisão de prazo: liquidação adicionaria duas tabelas e uma segunda
-  ponte, sem alterar a conclusão de negócio sobre prazo de recebimento.
-- **Positiva:** reduz de 11 para 4 tabelas de staging.
-- **Reversível:** os ZIPs preservados em `data/raw/` permitem incluir
-  liquidação sem novo download, caso sobre tempo.
+- **Positiva:** reduz de 11 para 6 tabelas de staging.
+- **Custo da liquidação:** incluir a fase adiciona 2 tabelas de
+  staging, 1 ponte adicional no modelo e ~22% de volume.
+- **Ganho da liquidação:** permite decompor o lead time em
+  empenho → liquidação (execução do contrato, responsabilidade do
+  fornecedor) e liquidação → pagamento (atraso do governo). Sem essa
+  decomposição, a pergunta 7 somaria as duas responsabilidades num
+  número só.
+- **Sem novo download:** os arquivos de liquidação já estão dentro dos
+  576 ZIPs preservados em `data/raw/`.
 
 ## Coluna descartada na carga
 
@@ -49,3 +51,9 @@ Descartar: `ListaBancos`, `ListaPrecatorios`, `ListaFaturas`,
 substancial dos 48% de volume do arquivo. Não responde a nenhuma das
 nove perguntas analíticas. Carregada na staging para fidelidade à
 fonte, descartada na passagem para o DW.
+
+## Histórico
+
+Versão inicial deste ADR registrava o descarte da liquidação com
+status "aceito". Essa decisão não havia sido tomada. Corrigido em
+2026-08-22, quando a inclusão foi decidida explicitamente.

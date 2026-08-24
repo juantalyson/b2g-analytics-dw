@@ -1,49 +1,50 @@
 ========================================================================
 ARQUIVO: 20250320_Despesas_Empenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 5.954
 Colunas: 63
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho)
-   distintas: 5954   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho                                                5954 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0      5954
-   Data Emiss„o                                      0         1
-   Tipo Empenho                                      0         3
-   CÛdigo ”rg„o Superior                             0        27
-   CÛdigo Unidade Gestora                            0      1044
-   CÛdigo Favorecido                                 0      3633
-   Favorecido                                        0      3566
-   CÛdigo FunÁ„o                                     0        25
-   Modalidade de LicitaÁ„o                           0        10
-   Valor do Empenho Convertido pra R$                0      4273
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0      5954
+   Data Emiss√£o                                        0         1
+   Tipo Empenho                                        0         3
+   C√≥digo √ìrg√£o Superior                               0        27
+   C√≥digo Unidade Gestora                              0      1044
+   C√≥digo Favorecido                                   0      3633
+   Favorecido                                          0      3566
+   C√≥digo Fun√ß√£o                                       0        25
+   Modalidade de Licita√ß√£o                             0        10
+   Valor do Empenho Convertido pra R$                  0      4273
 
 -- AMOSTRAS
-   CÛdigo Empenho                             393003392522025NE001357 | 393003392522025NE001379 | 393003392522025NE0
-   Data Emiss„o                               20/03/2025
-   Tipo Empenho                               Global | Ordin·rio | Estimativo
-   CÛdigo ”rg„o Superior                      39000 | 26000 | 52000
-   CÛdigo Unidade Gestora                     393003 | 153061 | 791580
-   CÛdigo Favorecido                          00818517000192 | 02363619000196 | 07150434000117
-   Favorecido                                 ENPA - ENGENHARIA E PARCERIA - EM RECUPERACAO JUDICIAL | SERGET MOBILI
-   CÛdigo FunÁ„o                              26 | 12 | 05
-   Modalidade de LicitaÁ„o                    Preg„o | N„o se Aplica | Dispensa de LicitaÁ„o
-   Valor do Empenho Convertido pra R$         1000000,00 | 600000,00 | 500000,00
+   C√≥digo Empenho                               393003392522025NE001357 | 393003392522025NE001379 | 39300339252202
+   Data Emiss√£o                                 20/03/2025
+   Tipo Empenho                                 Global | Ordin√°rio | Estimativo
+   C√≥digo √ìrg√£o Superior                        39000 | 26000 | 52000
+   C√≥digo Unidade Gestora                       393003 | 153061 | 791580
+   C√≥digo Favorecido                            00818517000192 | 02363619000196 | 07150434000117
+   Favorecido                                   ENPA - ENGENHARIA E PARCERIA - EM RECUPERACAO JUDICIAL | SERGET MO
+   C√≥digo Fun√ß√£o                                26 | 12 | 05
+   Modalidade de Licita√ß√£o                      Preg√£o | N√£o se Aplica | Dispensa de Licita√ß√£o
+   Valor do Empenho Convertido pra R$           1000000,00 | 600000,00 | 500000,00
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Empenho Convertido pra R$         decimal virgula=5954
+   Valor do Empenho Convertido pra R$           decimal virgula=5954
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                        4841  ( 81.3%)
    PF mascarado                      695  ( 11.7%)
    orgao/UG (6)                      255  (  4.3%)
-   outro (9 caracteres)              151  (  2.5%)
-   orgao/UG (3)                       12  (  0.2%)
+   PJ estrangeira (EX)               147  (  2.5%)
+   sentinela (-11)                    12  (  0.2%)
+   outro (9 caracteres)                4  (  0.1%)
 
    exemplos por tipo:
      [CNPJ (14)] 00818517000192 = ENPA - ENGENHARIA E PARCERIA - EM RECUPERACAO
@@ -52,60 +53,64 @@ Campos com CR residual: 0
      [PF mascarado] ***.426.257-** = VIRGINIA RODRIGUES FASSARELLA PEREIRA
      [PF mascarado] ***.640.067-** = JOSE ASSUNCAO CHAVES NETO
      [PF mascarado] ***.950.377-** = ALEXANDRE RABELLO DE FARIA
-     [outro (9 caracteres)] EXCGRENVE = ASSOCIATION LE RENVERSE
-     [outro (9 caracteres)] EXGINTERT = G-INTER TRANSPORTES LTDA
-     [outro (9 caracteres)] EXHANSEMO = HANSEATIC MOVING SERVICES LLC
+     [PJ estrangeira (EX)] EXCGRENVE = ASSOCIATION LE RENVERSE
+     [PJ estrangeira (EX)] EXGINTERT = G-INTER TRANSPORTES LTDA
+     [PJ estrangeira (EX)] EXHANSEMO = HANSEATIC MOVING SERVICES LLC
      [orgao/UG (6)] 153047 = HOSPITAL UNIVERSITARIO C. ANTONIO MORAIS/UFES
      [orgao/UG (6)] 153079 = UNIVERSIDADE FEDERAL DO PARANA
      [orgao/UG (6)] 158328 = INST.FED.DO RS/CAMPUS CAXIAS DO SUL
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [outro (9 caracteres)] PF1584176 = QUALIFICA MAIS PROGREDIR - ENERGIF - AUXILIO 
+     [outro (9 caracteres)] PF1584178 = QUALIFICA MAIS PROGREDIR - ENERGIF - PESSOAL 
+     [outro (9 caracteres)] PF8158295 = DIARIAS CAMPUS ACAILANDIA
 
 ========================================================================
 ARQUIVO: 20250715_Despesas_Empenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 6.925
 Colunas: 63
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho)
-   distintas: 6925   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho                                                6925 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0      6925
-   Data Emiss„o                                      0         1
-   Tipo Empenho                                      0         3
-   CÛdigo ”rg„o Superior                             0        32
-   CÛdigo Unidade Gestora                            0      1058
-   CÛdigo Favorecido                                 0      4425
-   Favorecido                                        0      4245
-   CÛdigo FunÁ„o                                     0        25
-   Modalidade de LicitaÁ„o                           0         8
-   Valor do Empenho Convertido pra R$                0      4624
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0      6925
+   Data Emiss√£o                                        0         1
+   Tipo Empenho                                        0         3
+   C√≥digo √ìrg√£o Superior                               0        32
+   C√≥digo Unidade Gestora                              0      1058
+   C√≥digo Favorecido                                   0      4425
+   Favorecido                                          0      4245
+   C√≥digo Fun√ß√£o                                       0        25
+   Modalidade de Licita√ß√£o                             0         8
+   Valor do Empenho Convertido pra R$                  0      4624
 
 -- AMOSTRAS
-   CÛdigo Empenho                             560010000012025NE000026 | 153128152362025NE000191 | 153128152362025NE0
-   Data Emiss„o                               15/07/2025
-   Tipo Empenho                               Ordin·rio | Global | Estimativo
-   CÛdigo ”rg„o Superior                      56000 | 26000 | 52000
-   CÛdigo Unidade Gestora                     560010 | 153128 | 765720
-   CÛdigo Favorecido                          57740407000172 | 23829669000196 | 32480783000144
-   Favorecido                                 NUCLEO ASSESSORIA & SOLUCOES INTEGRADAS LTDA | C.F.EMBALAGENS PLASTICA
-   CÛdigo FunÁ„o                              04 | 12 | 05
-   Modalidade de LicitaÁ„o                    Dispensa de LicitaÁ„o | Preg„o | InexigÌvel
-   Valor do Empenho Convertido pra R$         0,00 | 9539,00 | 3828,00
+   C√≥digo Empenho                               560010000012025NE000026 | 153128152362025NE000191 | 15312815236202
+   Data Emiss√£o                                 15/07/2025
+   Tipo Empenho                                 Ordin√°rio | Global | Estimativo
+   C√≥digo √ìrg√£o Superior                        56000 | 26000 | 52000
+   C√≥digo Unidade Gestora                       560010 | 153128 | 765720
+   C√≥digo Favorecido                            57740407000172 | 23829669000196 | 32480783000144
+   Favorecido                                   NUCLEO ASSESSORIA & SOLUCOES INTEGRADAS LTDA | C.F.EMBALAGENS PLAS
+   C√≥digo Fun√ß√£o                                04 | 12 | 05
+   Modalidade de Licita√ß√£o                      Dispensa de Licita√ß√£o | Preg√£o | Inexig√≠vel
+   Valor do Empenho Convertido pra R$           0,00 | 9539,00 | 3828,00
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Empenho Convertido pra R$         decimal virgula=6925
+   Valor do Empenho Convertido pra R$           decimal virgula=6925
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                        5343  ( 77.2%)
    PF mascarado                     1053  ( 15.2%)
    orgao/UG (6)                      334  (  4.8%)
-   outro (9 caracteres)              153  (  2.2%)
-   orgao/UG (3)                       42  (  0.6%)
+   PJ estrangeira (EX)               131  (  1.9%)
+   sentinela (-11)                    42  (  0.6%)
+   outro (9 caracteres)               22  (  0.3%)
 
    exemplos por tipo:
      [CNPJ (14)] 23829669000196 = C.F.EMBALAGENS PLASTICAS LTDA
@@ -114,60 +119,64 @@ Campos com CR residual: 0
      [PF mascarado] ***.011.967-** = MARILZA CARDOSO DE SOUZA
      [PF mascarado] ***.372.467-** = LUCIANO ZUNINO LOMBARDI DE CARVALHO
      [PF mascarado] ***.933.564-** = BRUNA LIMA FREIRE
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
-     [outro (9 caracteres)] EX65LINCO = LINCOLN PROPERTY COMPANY
-     [outro (9 caracteres)] EXE0D0078 = DIEHL DEFENCE GMBH & CO. KG
-     [outro (9 caracteres)] EXE0VA865 = EUROCONTROL MAASTRICHT UAC
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [PJ estrangeira (EX)] EX65LINCO = LINCOLN PROPERTY COMPANY
+     [PJ estrangeira (EX)] EXE0D0078 = DIEHL DEFENCE GMBH & CO. KG
+     [PJ estrangeira (EX)] EXE0VA865 = EUROCONTROL MAASTRICHT UAC
      [orgao/UG (6)] 155093 = INST.FED.MATO GROSSO/CAMPUS DIAMANTINO
      [orgao/UG (6)] 364102 = CONSELHO NAC DE DESENV CIENT E TECNOLOGICO
      [orgao/UG (6)] 510001 = COORD.GERAL DE ORCAMENTO, FINANCAS E CONTAB.
+     [outro (9 caracteres)] PF1146168 = PAGAMENTO DE DIARIAS PARA A REALIZACAO DO EVE
+     [outro (9 caracteres)] PF1ROBOBA = PARTICIPACAO AMOSTRA NACIONAL DE ROBOTICA MUN
+     [outro (9 caracteres)] PFD158291 = DIARIAS A SERVIDORES / IFMA SJP
 
 ========================================================================
 ARQUIVO: 20251119_Despesas_Empenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 11.615
 Colunas: 63
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho)
-   distintas: 11615   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho                                               11615 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0     11615
-   Data Emiss„o                                      0         1
-   Tipo Empenho                                      0         3
-   CÛdigo ”rg„o Superior                             0        33
-   CÛdigo Unidade Gestora                            0      1388
-   CÛdigo Favorecido                                 0      6870
-   Favorecido                                        0      6638
-   CÛdigo FunÁ„o                                     0        26
-   Modalidade de LicitaÁ„o                           0        10
-   Valor do Empenho Convertido pra R$                0      8250
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0     11615
+   Data Emiss√£o                                        0         1
+   Tipo Empenho                                        0         3
+   C√≥digo √ìrg√£o Superior                               0        33
+   C√≥digo Unidade Gestora                              0      1388
+   C√≥digo Favorecido                                   0      6870
+   Favorecido                                          0      6638
+   C√≥digo Fun√ß√£o                                       0        26
+   Modalidade de Licita√ß√£o                             0        10
+   Valor do Empenho Convertido pra R$                  0      8250
 
 -- AMOSTRAS
-   CÛdigo Empenho                             158496264142025NE000102 | 158496264142025NE000130 | 158496264142025NE0
-   Data Emiss„o                               19/11/2025
-   Tipo Empenho                               Global | Estimativo | Ordin·rio
-   CÛdigo ”rg„o Superior                      26000 | 49000 | 52000
-   CÛdigo Unidade Gestora                     158496 | 373053 | 773201
-   CÛdigo Favorecido                          ***.055.591-** | ***.381.261-** | ***.781.591-**
-   Favorecido                                 LORENA VILELA LIMA | KACYA LEANNDRA SILVA FERNANDES | ALICE PORTILHO A
-   CÛdigo FunÁ„o                              12 | 21 | 05
-   Modalidade de LicitaÁ„o                    N„o se Aplica | Preg„o | Dispensa de LicitaÁ„o
-   Valor do Empenho Convertido pra R$         1092,00 | 546,00 | 803,28
+   C√≥digo Empenho                               158496264142025NE000102 | 158496264142025NE000130 | 15849626414202
+   Data Emiss√£o                                 19/11/2025
+   Tipo Empenho                                 Global | Estimativo | Ordin√°rio
+   C√≥digo √ìrg√£o Superior                        26000 | 49000 | 52000
+   C√≥digo Unidade Gestora                       158496 | 373053 | 773201
+   C√≥digo Favorecido                            ***.055.591-** | ***.381.261-** | ***.781.591-**
+   Favorecido                                   LORENA VILELA LIMA | KACYA LEANNDRA SILVA FERNANDES | ALICE PORTIL
+   C√≥digo Fun√ß√£o                                12 | 21 | 05
+   Modalidade de Licita√ß√£o                      N√£o se Aplica | Preg√£o | Dispensa de Licita√ß√£o
+   Valor do Empenho Convertido pra R$           1092,00 | 546,00 | 803,28
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Empenho Convertido pra R$         decimal virgula=11615
+   Valor do Empenho Convertido pra R$           decimal virgula=11615
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                        8555  ( 73.7%)
    PF mascarado                     1864  ( 16.0%)
    orgao/UG (6)                      656  (  5.6%)
-   outro (9 caracteres)              470  (  4.0%)
-   orgao/UG (3)                       70  (  0.6%)
+   PJ estrangeira (EX)               392  (  3.4%)
+   outro (9 caracteres)               78  (  0.7%)
+   sentinela (-11)                    70  (  0.6%)
 
    exemplos por tipo:
      [PF mascarado] ***.055.591-** = LORENA VILELA LIMA
@@ -179,57 +188,61 @@ Campos com CR residual: 0
      [orgao/UG (6)] 158522 = INST.FED.DE GOIAS/CAMPUS ANAPOLIS
      [orgao/UG (6)] 158610 = INST.FED.DE GOIAS/CAMPUS APARECIDA DE GOIANIA
      [orgao/UG (6)] 773201 = PAGADORIA DE PESSOAL DA MARINHA EXTERIOR.
-     [outro (9 caracteres)] EXAMAZON2 = AMAZON ONLINE
-     [outro (9 caracteres)] EXSEQUICK = SERVICE QUICK, INC
-     [outro (9 caracteres)] EXUNGFUND = UNITED NATIONS GENERAL FUND
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
+     [PJ estrangeira (EX)] EXAMAZON2 = AMAZON ONLINE
+     [PJ estrangeira (EX)] EXSEQUICK = SERVICE QUICK, INC
+     [PJ estrangeira (EX)] EXUNGFUND = UNITED NATIONS GENERAL FUND
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [outro (9 caracteres)] PF1146151 = IBGE SERVIDORES DIVERSOS/AL - DIARIAS
+     [outro (9 caracteres)] PF6158291 = BOLSISTAS IFMA/CAMPUS SAO JOAO DOS PATOS
+     [outro (9 caracteres)] PFF158718 = CONCESSAO DE DIARIAS A SERVIDOR
 
 ========================================================================
 ARQUIVO: 20260212_Despesas_Empenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 5.216
 Colunas: 63
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho)
-   distintas: 5216   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho                                                5216 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0      5216
-   Data Emiss„o                                      0         1
-   Tipo Empenho                                      0         3
-   CÛdigo ”rg„o Superior                             0        32
-   CÛdigo Unidade Gestora                            0       991
-   CÛdigo Favorecido                                 0      3336
-   Favorecido                                        0      3271
-   CÛdigo FunÁ„o                                     0        25
-   Modalidade de LicitaÁ„o                           0         8
-   Valor do Empenho Convertido pra R$                0      3960
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0      5216
+   Data Emiss√£o                                        0         1
+   Tipo Empenho                                        0         3
+   C√≥digo √ìrg√£o Superior                               0        32
+   C√≥digo Unidade Gestora                              0       991
+   C√≥digo Favorecido                                   0      3336
+   Favorecido                                          0      3271
+   C√≥digo Fun√ß√£o                                       0        25
+   Modalidade de Licita√ß√£o                             0         8
+   Valor do Empenho Convertido pra R$                  0      3960
 
 -- AMOSTRAS
-   CÛdigo Empenho                             167177000012026NE000061 | 167177000012026NE000048 | 167177000012026NE0
-   Data Emiss„o                               12/02/2026
-   Tipo Empenho                               Estimativo | Ordin·rio | Global
-   CÛdigo ”rg„o Superior                      52000 | 26000 | 36000
-   CÛdigo Unidade Gestora                     167177 | 167143 | 167171
-   CÛdigo Favorecido                          16846976000110 | 00675242000185 | 23761969000180
-   Favorecido                                 GASTROMED SERVICOS MEDICOS E DIAGNOSTICOS LTDA | CLINICA DE ORTOPEDIA 
-   CÛdigo FunÁ„o                              05 | 12 | 10
-   Modalidade de LicitaÁ„o                    InexigÌvel | Preg„o | N„o se Aplica
-   Valor do Empenho Convertido pra R$         650,00 | 5036,93 | 75,02
+   C√≥digo Empenho                               167177000012026NE000061 | 167177000012026NE000048 | 16717700001202
+   Data Emiss√£o                                 12/02/2026
+   Tipo Empenho                                 Estimativo | Ordin√°rio | Global
+   C√≥digo √ìrg√£o Superior                        52000 | 26000 | 36000
+   C√≥digo Unidade Gestora                       167177 | 167143 | 167171
+   C√≥digo Favorecido                            16846976000110 | 00675242000185 | 23761969000180
+   Favorecido                                   GASTROMED SERVICOS MEDICOS E DIAGNOSTICOS LTDA | CLINICA DE ORTOPE
+   C√≥digo Fun√ß√£o                                05 | 12 | 10
+   Modalidade de Licita√ß√£o                      Inexig√≠vel | Preg√£o | N√£o se Aplica
+   Valor do Empenho Convertido pra R$           650,00 | 5036,93 | 75,02
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Empenho Convertido pra R$         decimal virgula=5216
+   Valor do Empenho Convertido pra R$           decimal virgula=5216
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                        4030  ( 77.3%)
    PF mascarado                      510  (  9.8%)
    orgao/UG (6)                      352  (  6.7%)
-   outro (9 caracteres)              282  (  5.4%)
-   orgao/UG (3)                       42  (  0.8%)
+   PJ estrangeira (EX)               271  (  5.2%)
+   sentinela (-11)                    42  (  0.8%)
+   outro (9 caracteres)               11  (  0.2%)
 
    exemplos por tipo:
      [CNPJ (14)] 00675242000185 = CLINICA DE ORTOPEDIA E FRATURAS DE GARANHUNS 
@@ -241,47 +254,50 @@ Campos com CR residual: 0
      [orgao/UG (6)] 154040 = FUNDACAO UNIVERSIDADE DE BRASILIA - UNB
      [orgao/UG (6)] 167014 = COMANDO 12 REGIAO MILITAR
      [orgao/UG (6)] 510001 = COORD.GERAL DE ORCAMENTO, FINANCAS E CONTAB.
-     [outro (9 caracteres)] EXCGBRACK = BRACK.CH
-     [outro (9 caracteres)] EXGIRARPA = GRUPO IBEROAMERICANO DE REPRESENTANTES ALTERN
-     [outro (9 caracteres)] EXSIN0033 = AMAZON SINGAPORE
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
+     [PJ estrangeira (EX)] EXCGBRACK = BRACK.CH
+     [PJ estrangeira (EX)] EXGIRARPA = GRUPO IBEROAMERICANO DE REPRESENTANTES ALTERN
+     [PJ estrangeira (EX)] EXSIN0033 = AMAZON SINGAPORE
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [outro (9 caracteres)] PF1152003 = DIARIAS NACIONAIS E INTERNACIONAIS
+     [outro (9 caracteres)] PFO210R50 = DIARIAS/INSPECAO JUDICIAL FAZENDA TABAUNA
+     [outro (9 caracteres)] PFO21GDE0 = DIARIAS/CADASTRAMENTO FAMILIAS ACAMPADAS
 
 ========================================================================
 ARQUIVO: 20250320_Despesas_ItemEmpenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 16.232
 Colunas: 18
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho, Sequencial)
-   distintas: 16205   duplicadas: 27
-   UNICA: NAO
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho + Sequencial                                  16205 distintas  27 duplicadas
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0     11372
-   Sequencial                                        0        62
-   CÛdigo SubElemento de Despesa                     0        89
-   Quantidade                                        0         3
-   Valor Unit·rio                                    0      4694
-   Valor Total                                       0      4694
-   Valor Atual                                       0      6601
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0     11372
+   Sequencial                                          0        62
+   C√≥digo SubElemento de Despesa                       0        89
+   Quantidade                                          0         3
+   Valor Unit√°rio                                      0      4694
+   Valor Total                                         0      4694
+   Valor Atual                                         0      6601
 
 -- AMOSTRAS
-   CÛdigo Empenho                             158156264252021NE000152 | 158121264102021NE000122 | 158121264102021NE0
-   Sequencial                                 1 | 2 | 3
-   CÛdigo SubElemento de Despesa              90 | 43 | 22
-   Quantidade                                 0,00 | 1,00000 | 4,00000
-   Valor Unit·rio                             0,00 | 3501,00000 | 300,00000
-   Valor Total                                0,00 | 3501,00000 | 300,00000
-   Valor Atual                                794,80000 | 101509,50000 | 5258,56000
+   C√≥digo Empenho                               158156264252021NE000152 | 158121264102021NE000122 | 15812126410202
+   Sequencial                                   1 | 2 | 3
+   C√≥digo SubElemento de Despesa                90 | 43 | 22
+   Quantidade                                   0,00 | 1,00000 | 4,00000
+   Valor Unit√°rio                               0,00 | 3501,00000 | 300,00000
+   Valor Total                                  0,00 | 3501,00000 | 300,00000
+   Valor Atual                                  794,80000 | 101509,50000 | 5258,56000
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Quantidade                                 decimal virgula=16232
-   Valor Unit·rio                             decimal virgula=16232
-   Valor Total                                decimal virgula=16232
-   Valor Atual                                decimal virgula=16232
+   Quantidade                                   decimal virgula=16232
+   Valor Unit√°rio                               decimal virgula=16232
+   Valor Total                                  decimal virgula=16232
+   Valor Atual                                  decimal virgula=16232
 
 -- 'Valor Total' VS 'Valor Atual'
    iguais:             677
@@ -294,40 +310,40 @@ Campos com CR residual: 0
 
 ========================================================================
 ARQUIVO: 20250715_Despesas_ItemEmpenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 12.712
 Colunas: 18
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho, Sequencial)
-   distintas: 12710   duplicadas: 2
-   UNICA: NAO
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho + Sequencial                                  12710 distintas  2 duplicadas
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0      7334
-   Sequencial                                        0        75
-   CÛdigo SubElemento de Despesa                     0        85
-   Quantidade                                        0         3
-   Valor Unit·rio                                    0       407
-   Valor Total                                       0       407
-   Valor Atual                                       0      7033
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0      7334
+   Sequencial                                          0        75
+   C√≥digo SubElemento de Despesa                       0        85
+   Quantidade                                          0         3
+   Valor Unit√°rio                                      0       407
+   Valor Total                                         0       407
+   Valor Atual                                         0      7033
 
 -- AMOSTRAS
-   CÛdigo Empenho                             195003112012020NE540823 | 195002112012020NE530687 | 158377264102020NE8
-   Sequencial                                 1 | 2 | 3
-   CÛdigo SubElemento de Despesa              91 | 48 | 01
-   Quantidade                                 1,00000 | 0,32054 | 0,00
-   Valor Unit·rio                             2865000,00000 | 126350,00000 | 467960,31000
-   Valor Total                                2865000,00000 | 126350,00000 | 149999,99777
-   Valor Atual                                0,00 | 215666,00000 | 3608500,00000
+   C√≥digo Empenho                               195003112012020NE540823 | 195002112012020NE530687 | 15837726410202
+   Sequencial                                   1 | 2 | 3
+   C√≥digo SubElemento de Despesa                91 | 48 | 01
+   Quantidade                                   1,00000 | 0,32054 | 0,00
+   Valor Unit√°rio                               2865000,00000 | 126350,00000 | 467960,31000
+   Valor Total                                  2865000,00000 | 126350,00000 | 149999,99777
+   Valor Atual                                  0,00 | 215666,00000 | 3608500,00000
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Quantidade                                 decimal virgula=12712
-   Valor Unit·rio                             decimal virgula=12712
-   Valor Total                                decimal virgula=12712
-   Valor Atual                                decimal virgula=12712
+   Quantidade                                   decimal virgula=12712
+   Valor Unit√°rio                               decimal virgula=12712
+   Valor Total                                  decimal virgula=12712
+   Valor Atual                                  decimal virgula=12712
 
 -- 'Valor Total' VS 'Valor Atual'
    iguais:            1177
@@ -340,40 +356,40 @@ Campos com CR residual: 0
 
 ========================================================================
 ARQUIVO: 20251119_Despesas_ItemEmpenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 21.164
 Colunas: 18
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho, Sequencial)
-   distintas: 21159   duplicadas: 5
-   UNICA: NAO
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho + Sequencial                                  21159 distintas  5 duplicadas
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0     12212
-   Sequencial                                        0       107
-   CÛdigo SubElemento de Despesa                     0        89
-   Quantidade                                        0         2
-   Valor Unit·rio                                    0       572
-   Valor Total                                       0       572
-   Valor Atual                                       0     11939
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0     12212
+   Sequencial                                          0       107
+   C√≥digo SubElemento de Despesa                       0        89
+   Quantidade                                          0         2
+   Valor Unit√°rio                                      0       572
+   Valor Total                                         0       572
+   Valor Atual                                         0     11939
 
 -- AMOSTRAS
-   CÛdigo Empenho                             257001000012019NE800550 | 257001000012020NE820343 | 158139264342021NE0
-   Sequencial                                 1 | 2 | 3
-   CÛdigo SubElemento de Despesa              01 | 26 | 42
-   Quantidade                                 1,00000 | 0,00
-   Valor Unit·rio                             150000,00000 | 100000,00000 | 0,00
-   Valor Total                                150000,00000 | 100000,00000 | 0,00
-   Valor Atual                                0,00 | 1000,00000 | 400,00000
+   C√≥digo Empenho                               257001000012019NE800550 | 257001000012020NE820343 | 15813926434202
+   Sequencial                                   1 | 2 | 3
+   C√≥digo SubElemento de Despesa                01 | 26 | 42
+   Quantidade                                   1,00000 | 0,00
+   Valor Unit√°rio                               150000,00000 | 100000,00000 | 0,00
+   Valor Total                                  150000,00000 | 100000,00000 | 0,00
+   Valor Atual                                  0,00 | 1000,00000 | 400,00000
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Quantidade                                 decimal virgula=21164
-   Valor Unit·rio                             decimal virgula=21164
-   Valor Total                                decimal virgula=21164
-   Valor Atual                                decimal virgula=21164
+   Quantidade                                   decimal virgula=21164
+   Valor Unit√°rio                               decimal virgula=21164
+   Valor Total                                  decimal virgula=21164
+   Valor Atual                                  decimal virgula=21164
 
 -- 'Valor Total' VS 'Valor Atual'
    iguais:            1988
@@ -386,40 +402,40 @@ Campos com CR residual: 0
 
 ========================================================================
 ARQUIVO: 20260212_Despesas_ItemEmpenho.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 8.970
 Colunas: 18
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Empenho, Sequencial)
-   distintas: 8970   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Empenho + Sequencial                                   8970 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Empenho                                    0      5230
-   Sequencial                                        0       206
-   CÛdigo SubElemento de Despesa                     0        81
-   Quantidade                                        0         2
-   Valor Unit·rio                                    0        24
-   Valor Total                                       0        24
-   Valor Atual                                       0      5524
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Empenho                                      0      5230
+   Sequencial                                          0       206
+   C√≥digo SubElemento de Despesa                       0        81
+   Quantidade                                          0         2
+   Valor Unit√°rio                                      0        24
+   Valor Total                                         0        24
+   Valor Atual                                         0      5524
 
 -- AMOSTRAS
-   CÛdigo Empenho                             257001000012018NE800490 | 257001000012018NE801680 | 254445252012018NE8
-   Sequencial                                 1 | 2 | 3
-   CÛdigo SubElemento de Despesa              01 | 28 | 79
-   Quantidade                                 1,00000 | 0,00
-   Valor Unit·rio                             200000,00000 | 1000000,00000 | 1034201,55000
-   Valor Total                                200000,00000 | 1000000,00000 | 1034201,55000
-   Valor Atual                                0,00 | 218667,72000 | 1276089,88000
+   C√≥digo Empenho                               257001000012018NE800490 | 257001000012018NE801680 | 25444525201201
+   Sequencial                                   1 | 2 | 3
+   C√≥digo SubElemento de Despesa                01 | 28 | 79
+   Quantidade                                   1,00000 | 0,00
+   Valor Unit√°rio                               200000,00000 | 1000000,00000 | 1034201,55000
+   Valor Total                                  200000,00000 | 1000000,00000 | 1034201,55000
+   Valor Atual                                  0,00 | 218667,72000 | 1276089,88000
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Quantidade                                 decimal virgula=8970
-   Valor Unit·rio                             decimal virgula=8970
-   Valor Total                                decimal virgula=8970
-   Valor Atual                                decimal virgula=8970
+   Quantidade                                   decimal virgula=8970
+   Valor Unit√°rio                               decimal virgula=8970
+   Valor Total                                  decimal virgula=8970
+   Valor Atual                                  decimal virgula=8970
 
 -- 'Valor Total' VS 'Valor Atual'
    iguais:             880
@@ -432,46 +448,48 @@ Campos com CR residual: 0
 
 ========================================================================
 ARQUIVO: 20250320_Despesas_Pagamento.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 45.248
 Colunas: 34
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento)
-   distintas: 45248   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento                                             45248 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     45248
-   Data Emiss„o                                      0         1
-   CÛdigo ”rg„o Superior                             5        35
-   CÛdigo Unidade Gestora                            5      1652
-   CÛdigo Favorecido                                 0     15201
-   Valor do Pagamento Convertido pra R$              0     30901
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     45248
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                               5        35
+   C√≥digo Unidade Gestora                              5      1652
+   C√≥digo Favorecido                                   0     15201
+   Valor do Pagamento Convertido pra R$                0     30901
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           160482000012025OB000315 | 200360000012025OB002739 | 160371000012025OB0
-   Data Emiss„o                               20/03/2025
-   CÛdigo ”rg„o Superior                      52000 | 30000 | 26000
-   CÛdigo Unidade Gestora                     160482 | 200360 | 160371
-   CÛdigo Favorecido                          ***.471.732-** | ***.034.861-** | ***.791.448-**
-   Valor do Pagamento Convertido pra R$       460,66 | 168,13 | 1011,99
+   C√≥digo Pagamento                             160482000012025OB000315 | 200360000012025OB002739 | 16037100001202
+   Data Emiss√£o                                 20/03/2025
+   C√≥digo √ìrg√£o Superior                        52000 | 30000 | 26000
+   C√≥digo Unidade Gestora                       160482 | 200360 | 160371
+   C√≥digo Favorecido                            ***.471.732-** | ***.034.861-** | ***.791.448-**
+   Valor do Pagamento Convertido pra R$         460,66 | 168,13 | 1011,99
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Pagamento Convertido pra R$       decimal virgula=45248
+   Valor do Pagamento Convertido pra R$         decimal virgula=45248
 
    negativos encontrados:
-     Valor do Pagamento Convertido pra R$     963
+     Valor do Pagamento Convertido pra R$       963
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                       34011  ( 75.2%)
    PF mascarado                     7047  ( 15.6%)
    orgao/UG (6)                     2658  (  5.9%)
-   orgao/UG (3)                     1193  (  2.6%)
-   outro (9 caracteres)              330  (  0.7%)
-   orgao/UG (2)                        9  (  0.0%)
+   sentinela (-11)                   869  (  1.9%)
+   sentinela (-13)                   324  (  0.7%)
+   PJ estrangeira (EX)               238  (  0.5%)
+   outro (9 caracteres)               92  (  0.2%)
+   sentinela (-1)                      9  (  0.0%)
 
    exemplos por tipo:
      [PF mascarado] ***.034.861-** = ALEKSANDR KHARLUNIN
@@ -481,58 +499,64 @@ Campos com CR residual: 0
      [CNPJ (14)] 19088605000104 = MGS CLEAN SOLUCOES E SERVICOS LTDA
      [CNPJ (14)] 59527788000131 = ERNST & YOUNG ASSESSORIA EMPRESARIAL LTDA
      [orgao/UG (6)] 160111 = COMANDO DA 4A BDA DE INFANTARIA LEVE MONTANHA
-     [orgao/UG (6)] 160118 = COMANDO DA 4™ REGIAO MILITAR
+     [orgao/UG (6)] 160118 = COMANDO DA 4¬™ REGIAO MILITAR
      [orgao/UG (6)] 160244 = COMANDO DE ARTILHARIA DIVISIONARIA DA 1 DE
-     [outro (9 caracteres)] EX2347546 = SHENZHEN PIOCREAT 3D TECHNOLOGI CO. LTD
-     [outro (9 caracteres)] EXFRMELIN = MELINA REVUELTA
-     [outro (9 caracteres)] EXFRRIVIE = FRENCH RIVIERA LUXURY DRIVER
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
-     [orgao/UG (3)] -13 = Dado referente ‡ Folha de Pagamento
-     [orgao/UG (2)] -1 = Sem informaÁ„o
+     [PJ estrangeira (EX)] EX2347546 = SHENZHEN PIOCREAT 3D TECHNOLOGI CO. LTD
+     [PJ estrangeira (EX)] EXFRMELIN = MELINA REVUELTA
+     [PJ estrangeira (EX)] EXFRRIVIE = FRENCH RIVIERA LUXURY DRIVER
+     [sentinela (-13)] -13 = Dado referente √† Folha de Pagamento
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+     [outro (9 caracteres)] RB0000048 = PAGAMENTOS DA SUBCONTA TESOURO PARA A SUBCONT
+     [outro (9 caracteres)] RB0000049 = PAGAMENTOS DA SUBCONTA PI PARA A SUBCONTA TES
+     [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
 
 ========================================================================
 ARQUIVO: 20250715_Despesas_Pagamento.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 50.309
 Colunas: 34
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento)
-   distintas: 50309   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento                                             50309 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     50309
-   Data Emiss„o                                      0         1
-   CÛdigo ”rg„o Superior                            17        34
-   CÛdigo Unidade Gestora                           17      1752
-   CÛdigo Favorecido                                11     16361
-   Valor do Pagamento Convertido pra R$              0     31625
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     50309
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                              17        34
+   C√≥digo Unidade Gestora                             17      1752
+   C√≥digo Favorecido                                  11     16361
+   Valor do Pagamento Convertido pra R$                0     31625
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           110511000012025NS002878 | 110511000012025NS002877 | 110511000012025NS0
-   Data Emiss„o                               15/07/2025
-   CÛdigo ”rg„o Superior                      52000 | 26000 | 22000
-   CÛdigo Unidade Gestora                     110511 | 153010 | 158345
-   CÛdigo Favorecido                          ***.410.797-** | ***.494.722-** | 153010
-   Valor do Pagamento Convertido pra R$       -318,13 | 0,00 | -1744,04
+   C√≥digo Pagamento                             110511000012025NS002878 | 110511000012025NS002877 | 11051100001202
+   Data Emiss√£o                                 15/07/2025
+   C√≥digo √ìrg√£o Superior                        52000 | 26000 | 22000
+   C√≥digo Unidade Gestora                       110511 | 153010 | 158345
+   C√≥digo Favorecido                            ***.410.797-** | ***.494.722-** | 153010
+   Valor do Pagamento Convertido pra R$         -318,13 | 0,00 | -1744,04
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Pagamento Convertido pra R$       decimal virgula=50309
+   Valor do Pagamento Convertido pra R$         decimal virgula=50309
 
    negativos encontrados:
-     Valor do Pagamento Convertido pra R$     1202
+     Valor do Pagamento Convertido pra R$       1202
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                       38600  ( 76.7%)
    PF mascarado                     7996  ( 15.9%)
    orgao/UG (6)                     2322  (  4.6%)
-   orgao/UG (3)                      903  (  1.8%)
-   outro (9 caracteres)              457  (  0.9%)
-   orgao/UG (2)                       20  (  0.0%)
+   sentinela (-11)                   571  (  1.1%)
+   sentinela (-13)                   332  (  0.7%)
+   PJ estrangeira (EX)               301  (  0.6%)
+   outro (9 caracteres)              156  (  0.3%)
+   sentinela (-1)                     19  (  0.0%)
    vazio                              11  (  0.0%)
+   sentinela (-3)                      1  (  0.0%)
 
    exemplos por tipo:
      [PF mascarado] ***.317.212-** = SUAN COUTO DE ALMEIDA
@@ -544,56 +568,62 @@ Campos com CR residual: 0
      [CNPJ (14)] 29244044000149 = J. DA SILVA TECNOLOGIA
      [CNPJ (14)] 34246709000193 = VERSSERV VENDASONLINE LTDA
      [CNPJ (14)] 42644220000106 = AGUAS DO RIO 4 SPE S.A
-     [outro (9 caracteres)] EX1605955 = CEBW - RETRIEX
-     [outro (9 caracteres)] EXASSISTE = ASSISTENCIA PSICOSSOCIAL EM MONTREAL
-     [outro (9 caracteres)] EXFAOCERI = FOOD AND AGRICULTURAL ORGANIZATION CERIMONIAL
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
-     [orgao/UG (3)] -13 = Dado referente ‡ Folha de Pagamento
-     [orgao/UG (2)] -1 = Sem informaÁ„o
-     [orgao/UG (2)] -3 = Inv·lido
+     [PJ estrangeira (EX)] EX1605955 = CEBW - RETRIEX
+     [PJ estrangeira (EX)] EXASSISTE = ASSISTENCIA PSICOSSOCIAL EM MONTREAL
+     [PJ estrangeira (EX)] EXFAOCERI = FOOD AND AGRICULTURAL ORGANIZATION CERIMONIAL
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-13)] -13 = Dado referente √† Folha de Pagamento
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+     [outro (9 caracteres)] RB0000004 = PAGAMENTO DE BENEFICIOS - INSS/FRGPS
+     [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
+     [outro (9 caracteres)] RB0000085 = PAGAMENTOS ESPECIFICOS DA ROTINA DO BCB
+     [sentinela (-3)] -3 = Inv√°lido
 
 ========================================================================
 ARQUIVO: 20251119_Despesas_Pagamento.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 56.299
 Colunas: 34
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento)
-   distintas: 56299   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento                                             56299 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     56299
-   Data Emiss„o                                      0         1
-   CÛdigo ”rg„o Superior                            10        35
-   CÛdigo Unidade Gestora                           10      1863
-   CÛdigo Favorecido                                 0     21782
-   Valor do Pagamento Convertido pra R$              0     33087
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     56299
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                              10        35
+   C√≥digo Unidade Gestora                             10      1863
+   C√≥digo Favorecido                                   0     21782
+   Valor do Pagamento Convertido pra R$                0     33087
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           153103152342025OB020836 | 170092000012025OB001686 | 158456264082025OB0
-   Data Emiss„o                               19/11/2025
-   CÛdigo ”rg„o Superior                      26000 | 25000 | 47000
-   CÛdigo Unidade Gestora                     153103 | 170092 | 158456
-   CÛdigo Favorecido                          ***.356.114-** | ***.914.804-** | ***.979.523-**
-   Valor do Pagamento Convertido pra R$       -103,00 | 1978,92 | 400,00
+   C√≥digo Pagamento                             153103152342025OB020836 | 170092000012025OB001686 | 15845626408202
+   Data Emiss√£o                                 19/11/2025
+   C√≥digo √ìrg√£o Superior                        26000 | 25000 | 47000
+   C√≥digo Unidade Gestora                       153103 | 170092 | 158456
+   C√≥digo Favorecido                            ***.356.114-** | ***.914.804-** | ***.979.523-**
+   Valor do Pagamento Convertido pra R$         -103,00 | 1978,92 | 400,00
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Pagamento Convertido pra R$       decimal virgula=56299
+   Valor do Pagamento Convertido pra R$         decimal virgula=56299
 
    negativos encontrados:
-     Valor do Pagamento Convertido pra R$     1024
+     Valor do Pagamento Convertido pra R$       1024
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                       37878  ( 67.3%)
    PF mascarado                    13379  ( 23.8%)
    orgao/UG (6)                     2807  (  5.0%)
-   orgao/UG (3)                     1706  (  3.0%)
-   outro (9 caracteres)              514  (  0.9%)
-   orgao/UG (2)                       15  (  0.0%)
+   sentinela (-11)                  1013  (  1.8%)
+   sentinela (-13)                   693  (  1.2%)
+   PJ estrangeira (EX)               261  (  0.5%)
+   outro (9 caracteres)              253  (  0.4%)
+   sentinela (-1)                     13  (  0.0%)
+   sentinela (-3)                      2  (  0.0%)
 
    exemplos por tipo:
      [PF mascarado] ***.356.114-** = GUTEMBERG FELIX DA SILVA
@@ -605,56 +635,62 @@ Campos com CR residual: 0
      [orgao/UG (6)] 120093 = SUBDIRETORIA DE PAGAMENTO DE PESSOAL/EXTERIOR
      [orgao/UG (6)] 154215 = FUNDACAO UNIVERSIDADE FEDERAL DO AMAPA
      [orgao/UG (6)] 275075 = VALEC ENGENHARIA, CONSTRUCOES E FERROVIAS S.A
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
-     [orgao/UG (3)] -13 = Dado referente ‡ Folha de Pagamento
-     [orgao/UG (2)] -1 = Sem informaÁ„o
-     [orgao/UG (2)] -3 = Inv·lido
-     [outro (9 caracteres)] EX1605818 = QUICKEN LOGISTICS
-     [outro (9 caracteres)] EX1606164 = WALBERY NOGUEIRA DE LIMA E SILVA
+     [sentinela (-13)] -13 = Dado referente √† Folha de Pagamento
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+     [PJ estrangeira (EX)] EX1605818 = QUICKEN LOGISTICS
+     [PJ estrangeira (EX)] EX1606164 = WALBERY NOGUEIRA DE LIMA E SILVA
+     [PJ estrangeira (EX)] EXSIN0124 = ENTERPRISE SINGAPORE
      [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
+     [outro (9 caracteres)] RB0000085 = PAGAMENTOS ESPECIFICOS DA ROTINA DO BCB
+     [outro (9 caracteres)] RB1705115 = CORPORACAO ANDINA DE FOMENTO - CAF (MP)
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-3)] -3 = Inv√°lido
 
 ========================================================================
 ARQUIVO: 20260212_Despesas_Pagamento.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 34.007
 Colunas: 34
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento)
-   distintas: 34007   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento                                             34007 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     34007
-   Data Emiss„o                                      0         1
-   CÛdigo ”rg„o Superior                             5        35
-   CÛdigo Unidade Gestora                            5      1554
-   CÛdigo Favorecido                                 0     12892
-   Valor do Pagamento Convertido pra R$              0     24552
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     34007
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                               5        35
+   C√≥digo Unidade Gestora                              5      1554
+   C√≥digo Favorecido                                   0     12892
+   Valor do Pagamento Convertido pra R$                0     24552
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           154047152642026DF800343 | 154047152642026DF800350 | 154047152642026DF8
-   Data Emiss„o                               12/02/2026
-   CÛdigo ”rg„o Superior                      26000 | 53000 | 49000
-   CÛdigo Unidade Gestora                     154047 | 533014 | 135101
-   CÛdigo Favorecido                          154047 | 05209402000114 | 05680391000156
-   Valor do Pagamento Convertido pra R$       138044,65 | 2051,10 | 1287383,98
+   C√≥digo Pagamento                             154047152642026DF800343 | 154047152642026DF800350 | 15404715264202
+   Data Emiss√£o                                 12/02/2026
+   C√≥digo √ìrg√£o Superior                        26000 | 53000 | 49000
+   C√≥digo Unidade Gestora                       154047 | 533014 | 135101
+   C√≥digo Favorecido                            154047 | 05209402000114 | 05680391000156
+   Valor do Pagamento Convertido pra R$         138044,65 | 2051,10 | 1287383,98
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor do Pagamento Convertido pra R$       decimal virgula=34007
+   Valor do Pagamento Convertido pra R$         decimal virgula=34007
 
    negativos encontrados:
-     Valor do Pagamento Convertido pra R$     629
+     Valor do Pagamento Convertido pra R$       629
 
 -- CLASSIFICACAO DO FAVORECIDO
    CNPJ (14)                       25654  ( 75.4%)
    PF mascarado                     5500  ( 16.2%)
    orgao/UG (6)                     1769  (  5.2%)
-   orgao/UG (3)                      755  (  2.2%)
-   outro (9 caracteres)              325  (  1.0%)
-   orgao/UG (2)                        4  (  0.0%)
+   sentinela (-11)                   506  (  1.5%)
+   sentinela (-13)                   249  (  0.7%)
+   PJ estrangeira (EX)               217  (  0.6%)
+   outro (9 caracteres)              108  (  0.3%)
+   sentinela (-1)                      3  (  0.0%)
+   sentinela (-3)                      1  (  0.0%)
 
    exemplos por tipo:
      [orgao/UG (6)] 154043 = FUNDACAO UNIVERSIDADE FEDERAL DE UBERLANDIA
@@ -666,183 +702,594 @@ Campos com CR residual: 0
      [PF mascarado] ***.136.466-** = NATALINO DA SILVA DE OLIVEIRA
      [PF mascarado] ***.495.904-** = JOSE AMAURI DO NASCIMENTO SILVA
      [PF mascarado] ***.756.547-** = JOAO GUILHERME VIEIRA FERREIRA
-     [orgao/UG (3)] -11 = InformaÁ„o protegida por sigilo nos termos da
-     [orgao/UG (3)] -13 = Dado referente ‡ Folha de Pagamento
-     [outro (9 caracteres)] EX1605955 = CEBW - RETRIEX
-     [outro (9 caracteres)] EX2544018 = ELSEVIER B.V.
+     [sentinela (-13)] -13 = Dado referente √† Folha de Pagamento
+     [outro (9 caracteres)] RB0000034 = PAGAMENTO AO BANCO CENTRAL
      [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
-     [orgao/UG (2)] -1 = Sem informaÁ„o
-     [orgao/UG (2)] -3 = Inv·lido
+     [outro (9 caracteres)] RB0000085 = PAGAMENTOS ESPECIFICOS DA ROTINA DO BCB
+     [PJ estrangeira (EX)] EX1605955 = CEBW - RETRIEX
+     [PJ estrangeira (EX)] EX2544018 = ELSEVIER B.V.
+     [PJ estrangeira (EX)] EX2544370 = FRONTIERS MEDIA SA
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+     [sentinela (-3)] -3 = Inv√°lido
 
 ========================================================================
 ARQUIVO: 20250320_Despesas_Pagamento_EmpenhosImpactados.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 46.422
 Colunas: 8
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento, CÛdigo Empenho, CÛdigo Natureza Despesa Completa, Subitem)
-   distintas: 46422   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento + C√≥digo Empenho + C√≥digo Natureza Des...   46422 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     43897
-   CÛdigo Empenho                                    0     23169
-   CÛdigo Natureza Despesa Completa                  0       681
-   Subitem                                           0       487
-   Valor Pago (R$)                                   0     19091
-   Valor Restos a Pagar Inscritos (R$)               0         1
-   Valor Restos a Pagar Cancelado (R$)               0         1
-   Valor Restos a Pagar Pagos (R$)                   0     15341
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     43897
+   C√≥digo Empenho                                      0     23169
+   C√≥digo Natureza Despesa Completa                    0       681
+   Subitem                                             0       487
+   Valor Pago (R$)                                     0     19091
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0         1
+   Valor Restos a Pagar Pagos (R$)                     0     15341
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           110001000012025NS004169 | 110001000012025OB001671 | 110001000012025OB0
-   CÛdigo Empenho                             110001000012025NE000090 | 110001000012025NE000087 | 110001000012025NE0
-   CÛdigo Natureza Despesa Completa           33903303 | 31909602 | 33903302
-   Subitem                                    LOCACAO DE MEIOS DE TRANSPORTE | PESSOAL REQUISITADO DE OUTROS ENTES |
-   Valor Pago (R$)                            -55574,01 | 55574,01 | 17903,98
-   Valor Restos a Pagar Inscritos (R$)        0,00
-   Valor Restos a Pagar Cancelado (R$)        0,00
-   Valor Restos a Pagar Pagos (R$)            0,00 | 1304,79 | 10683,88
+   C√≥digo Pagamento                             110001000012025NS004169 | 110001000012025OB001671 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE000090 | 110001000012025NE000087 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903303 | 31909602 | 33903302
+   Subitem                                      LOCACAO DE MEIOS DE TRANSPORTE | PESSOAL REQUISITADO DE OUTROS ENT
+   Valor Pago (R$)                              -55574,01 | 55574,01 | 17903,98
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00
+   Valor Restos a Pagar Pagos (R$)              0,00 | 1304,79 | 10683,88
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor Pago (R$)                            decimal virgula=46422
-   Valor Restos a Pagar Inscritos (R$)        decimal virgula=46422
-   Valor Restos a Pagar Cancelado (R$)        decimal virgula=46422
-   Valor Restos a Pagar Pagos (R$)            decimal virgula=46422
+   Valor Pago (R$)                              decimal virgula=46422
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=46422
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=46422
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=46422
 
    negativos encontrados:
-     Valor Pago (R$)                          535
-     Valor Restos a Pagar Pagos (R$)          102
+     Valor Pago (R$)                            535
+     Valor Restos a Pagar Pagos (R$)            102
 
 ========================================================================
 ARQUIVO: 20250715_Despesas_Pagamento_EmpenhosImpactados.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 51.774
 Colunas: 8
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento, CÛdigo Empenho, CÛdigo Natureza Despesa Completa, Subitem)
-   distintas: 51774   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento + C√≥digo Empenho + C√≥digo Natureza Des...   51774 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     48831
-   CÛdigo Empenho                                    0     26261
-   CÛdigo Natureza Despesa Completa                  0       567
-   Subitem                                           0       456
-   Valor Pago (R$)                                   0     29385
-   Valor Restos a Pagar Inscritos (R$)               0         1
-   Valor Restos a Pagar Cancelado (R$)               0         1
-   Valor Restos a Pagar Pagos (R$)                   0      5069
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     48831
+   C√≥digo Empenho                                      0     26261
+   C√≥digo Natureza Despesa Completa                    0       567
+   Subitem                                             0       456
+   Valor Pago (R$)                                     0     29385
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0         1
+   Valor Restos a Pagar Pagos (R$)                     0      5069
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           110001000012025DR800454 | 110001000012025DR800455 | 110001000012025DR8
-   CÛdigo Empenho                             110001000012025NE000090 | 110001000012025NE000303 | 110001000012025NE0
-   CÛdigo Natureza Despesa Completa           33903303 | 33903916 | 33903958
-   Subitem                                    LOCACAO DE MEIOS DE TRANSPORTE | MANUTENCAO E CONSERV. DE BENS IMOVEIS
-   Valor Pago (R$)                            1280,74 | 444,30 | 54597,55
-   Valor Restos a Pagar Inscritos (R$)        0,00
-   Valor Restos a Pagar Cancelado (R$)        0,00
-   Valor Restos a Pagar Pagos (R$)            0,00 | 641,76 | 668,28
+   C√≥digo Pagamento                             110001000012025DR800454 | 110001000012025DR800455 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE000090 | 110001000012025NE000303 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903303 | 33903916 | 33903958
+   Subitem                                      LOCACAO DE MEIOS DE TRANSPORTE | MANUTENCAO E CONSERV. DE BENS IMO
+   Valor Pago (R$)                              1280,74 | 444,30 | 54597,55
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00
+   Valor Restos a Pagar Pagos (R$)              0,00 | 641,76 | 668,28
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor Pago (R$)                            decimal virgula=51774
-   Valor Restos a Pagar Inscritos (R$)        decimal virgula=51774
-   Valor Restos a Pagar Cancelado (R$)        decimal virgula=51774
-   Valor Restos a Pagar Pagos (R$)            decimal virgula=51774
+   Valor Pago (R$)                              decimal virgula=51774
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=51774
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=51774
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=51774
 
    negativos encontrados:
-     Valor Pago (R$)                          1119
-     Valor Restos a Pagar Pagos (R$)          32
+     Valor Pago (R$)                            1119
+     Valor Restos a Pagar Pagos (R$)            32
 
 ========================================================================
 ARQUIVO: 20251119_Despesas_Pagamento_EmpenhosImpactados.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 58.432
 Colunas: 8
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento, CÛdigo Empenho, CÛdigo Natureza Despesa Completa, Subitem)
-   distintas: 58432   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento + C√≥digo Empenho + C√≥digo Natureza Des...   58432 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     55150
-   CÛdigo Empenho                                    0     26895
-   CÛdigo Natureza Despesa Completa                  0       667
-   Subitem                                           0       507
-   Valor Pago (R$)                                   0     33008
-   Valor Restos a Pagar Inscritos (R$)               0         1
-   Valor Restos a Pagar Cancelado (R$)               0         1
-   Valor Restos a Pagar Pagos (R$)                   0      2581
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     55150
+   C√≥digo Empenho                                      0     26895
+   C√≥digo Natureza Despesa Completa                    0       667
+   Subitem                                             0       507
+   Valor Pago (R$)                                     0     33008
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0         1
+   Valor Restos a Pagar Pagos (R$)                     0      2581
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           110001000012025DR800762 | 110001000012025DR800763 | 110001000012025DR8
-   CÛdigo Empenho                             110001000012025NE000690 | 110001000012025NE000804 | 110001000012025NE0
-   CÛdigo Natureza Despesa Completa           33903704 | 33903701 | 33903703
-   Subitem                                    MANUTENCAO E CONSERVACAO DE BENS IMOVEIS | APOIO ADMINISTRATIVO, TECNI
-   Valor Pago (R$)                            17917,51 | 25852,14 | 3234,30
-   Valor Restos a Pagar Inscritos (R$)        0,00
-   Valor Restos a Pagar Cancelado (R$)        0,00
-   Valor Restos a Pagar Pagos (R$)            0,00 | 858,82 | 469,06
+   C√≥digo Pagamento                             110001000012025DR800762 | 110001000012025DR800763 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE000690 | 110001000012025NE000804 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903704 | 33903701 | 33903703
+   Subitem                                      MANUTENCAO E CONSERVACAO DE BENS IMOVEIS | APOIO ADMINISTRATIVO, T
+   Valor Pago (R$)                              17917,51 | 25852,14 | 3234,30
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00
+   Valor Restos a Pagar Pagos (R$)              0,00 | 858,82 | 469,06
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor Pago (R$)                            decimal virgula=58432
-   Valor Restos a Pagar Inscritos (R$)        decimal virgula=58432
-   Valor Restos a Pagar Cancelado (R$)        decimal virgula=58432
-   Valor Restos a Pagar Pagos (R$)            decimal virgula=58432
+   Valor Pago (R$)                              decimal virgula=58432
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=58432
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=58432
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=58432
 
    negativos encontrados:
-     Valor Pago (R$)                          1213
-     Valor Restos a Pagar Pagos (R$)          17
+     Valor Pago (R$)                            1213
+     Valor Restos a Pagar Pagos (R$)            17
 
 ========================================================================
 ARQUIVO: 20260212_Despesas_Pagamento_EmpenhosImpactados.csv
+MODO: mapeado
 ========================================================================
 
 Linhas de dados: 35.482
 Colunas: 8
 Campos com CR residual: 0
 
--- CHAVE CANDIDATA: (CÛdigo Pagamento, CÛdigo Empenho, CÛdigo Natureza Despesa Completa, Subitem)
-   distintas: 35482   duplicadas: 0
-   UNICA: SIM
+-- TESTE DE UNICIDADE
+   C√≥digo Pagamento + C√≥digo Empenho + C√≥digo Natureza Des...   35482 distintas  UNICA
 
--- COLUNAS DE INTERESSE
-   coluna                                       vazios  distintos
-   CÛdigo Pagamento                                  0     32816
-   CÛdigo Empenho                                    0     18725
-   CÛdigo Natureza Despesa Completa                  0       591
-   Subitem                                           0       483
-   Valor Pago (R$)                                   0      7817
-   Valor Restos a Pagar Inscritos (R$)               0         1
-   Valor Restos a Pagar Cancelado (R$)               0         1
-   Valor Restos a Pagar Pagos (R$)                   0     18986
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Pagamento                                    0     32816
+   C√≥digo Empenho                                      0     18725
+   C√≥digo Natureza Despesa Completa                    0       591
+   Subitem                                             0       483
+   Valor Pago (R$)                                     0      7817
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0         1
+   Valor Restos a Pagar Pagos (R$)                     0     18986
 
 -- AMOSTRAS
-   CÛdigo Pagamento                           110001000012026DR800094 | 110001000012026DR800095 | 110001000012026DR8
-   CÛdigo Empenho                             110001000012026NE000194 | 110001000012025NE000354 | 110001000012026NE0
-   CÛdigo Natureza Despesa Completa           33903703 | 33904011 | 33903303
-   Subitem                                    VIGILANCIA OSTENSIVA | SUPORTE DE INFRAESTRUTURA DE TIC | LOCACAO DE M
-   Valor Pago (R$)                            11350,66 | 0,00 | 119,41
-   Valor Restos a Pagar Inscritos (R$)        0,00
-   Valor Restos a Pagar Cancelado (R$)        0,00
-   Valor Restos a Pagar Pagos (R$)            0,00 | 70,00 | 24,43
+   C√≥digo Pagamento                             110001000012026DR800094 | 110001000012026DR800095 | 11000100001202
+   C√≥digo Empenho                               110001000012026NE000194 | 110001000012025NE000354 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903703 | 33904011 | 33903303
+   Subitem                                      VIGILANCIA OSTENSIVA | SUPORTE DE INFRAESTRUTURA DE TIC | LOCACAO 
+   Valor Pago (R$)                              11350,66 | 0,00 | 119,41
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00
+   Valor Restos a Pagar Pagos (R$)              0,00 | 70,00 | 24,43
 
 -- FORMATO DOS CAMPOS NUMERICOS
-   Valor Pago (R$)                            decimal virgula=35482
-   Valor Restos a Pagar Inscritos (R$)        decimal virgula=35482
-   Valor Restos a Pagar Cancelado (R$)        decimal virgula=35482
-   Valor Restos a Pagar Pagos (R$)            decimal virgula=35482
+   Valor Pago (R$)                              decimal virgula=35482
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=35482
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=35482
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=35482
 
    negativos encontrados:
-     Valor Pago (R$)                          270
-     Valor Restos a Pagar Pagos (R$)          153
+     Valor Pago (R$)                            270
+     Valor Restos a Pagar Pagos (R$)            153
+
+========================================================================
+ARQUIVO: 20250320_Despesas_Liquidacao.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 20.952
+Colunas: 28
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o                                            20952 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     20952
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                              13        35
+   C√≥digo Unidade Gestora                             13      1945
+   C√≥digo Favorecido                                   0     11124
+   Favorecido                                          0     10972
+   C√≥digo Elemento de Despesa                          0        51
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            537003000012025NS000015 | 158635264212025NS000902 | 12064100001202
+   Data Emiss√£o                                 20/03/2025
+   C√≥digo √ìrg√£o Superior                        53000 | 26000 | 52000
+   C√≥digo Unidade Gestora                       537003 | 158635 | 120641
+   C√≥digo Favorecido                            00000000000191 | 45769285000168 | 34467753000123
+   Favorecido                                   BANCO DO BRASIL SA | REDNOV FERRAMENTAS LTDA. | ROLDAO BRAGA RIBEI
+   C√≥digo Elemento de Despesa                   66 | 52 | 30
+
+-- CLASSIFICACAO DO FAVORECIDO
+   CNPJ (14)                       12482  ( 59.6%)
+   PF mascarado                     6170  ( 29.4%)
+   orgao/UG (6)                     1313  (  6.3%)
+   sentinela (-11)                   677  (  3.2%)
+   PJ estrangeira (EX)               262  (  1.3%)
+   outro (9 caracteres)               45  (  0.2%)
+   sentinela (-1)                      3  (  0.0%)
+
+   exemplos por tipo:
+     [CNPJ (14)] 00000000000191 = BANCO DO BRASIL SA
+     [CNPJ (14)] 34467753000123 = ROLDAO BRAGA RIBEIRO LTDA
+     [CNPJ (14)] 45769285000168 = REDNOV FERRAMENTAS LTDA.
+     [PF mascarado] ***.167.535-** = MAISA BASTOS ABRAM
+     [PF mascarado] ***.631.354-** = SAMUEL WENDELL GOMES MARINHO
+     [PF mascarado] ***.740.404-** = LUDMILA BERNARDO FARIAS PEREIRA
+     [PJ estrangeira (EX)] EX2007170 = KAKUYASU
+     [PJ estrangeira (EX)] EXAMEASCE = AMERICA ASCENSORES LTDA - RUT: 214.908.400.01
+     [PJ estrangeira (EX)] EXRIVERAF = RIVERAFLORES S.R.L. RUT 211801740019
+     [orgao/UG (6)] 153030 = UNIVERSIDADE FEDERAL DE ITAJUBA
+     [orgao/UG (6)] 155007 = HU BRASIL
+     [orgao/UG (6)] 170395 = FCDF¬±SSP ¬± POLICIA CIVIL DO DF
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [outro (9 caracteres)] PFMONITOR = ALUNOS MONITORES DOS CAMPI DO IFRJ
+     [outro (9 caracteres)] PFUFJF252 = CAED - PESSOAS FISICAS
+     [outro (9 caracteres)] RB0036166 = FOLHA DE PAGAMENTO
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+
+========================================================================
+ARQUIVO: 20250715_Despesas_Liquidacao.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 20.262
+Colunas: 28
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o                                            20262 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     20262
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                              26        35
+   C√≥digo Unidade Gestora                             26      1888
+   C√≥digo Favorecido                                   0     10751
+   Favorecido                                          0     10640
+   C√≥digo Elemento de Despesa                          0        49
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            770100000012025NS002537 | 160418000012025NS000799 | 16041800001202
+   Data Emiss√£o                                 15/07/2025
+   C√≥digo √ìrg√£o Superior                        52000 | 26000 | 24000
+   C√≥digo Unidade Gestora                       770100 | 160418 | 167118
+   C√≥digo Favorecido                            EX9317163 | ***.043.600-** | 21946306000105
+   Favorecido                                   DAISY COMMUNICATIONS | LUDMILA HEDWIG GOULART | HOSPITAL DE OLHOS 
+   C√≥digo Elemento de Despesa                   40 | MU | 39
+
+-- CLASSIFICACAO DO FAVORECIDO
+   CNPJ (14)                       11835  ( 58.4%)
+   PF mascarado                     6196  ( 30.6%)
+   orgao/UG (6)                     1102  (  5.4%)
+   sentinela (-11)                   707  (  3.5%)
+   PJ estrangeira (EX)               241  (  1.2%)
+   sentinela (-1)                    116  (  0.6%)
+   outro (9 caracteres)               65  (  0.3%)
+
+   exemplos por tipo:
+     [PJ estrangeira (EX)] EX9317163 = DAISY COMMUNICATIONS
+     [PJ estrangeira (EX)] EX9317382 = ROLLS-ROYCE SOLUTIONS GMBH
+     [PJ estrangeira (EX)] EXHKKYOCR = KYOCERA DOCUMENT SOLUTIONS HONG KONG LIMITED
+     [PF mascarado] ***.043.600-** = LUDMILA HEDWIG GOULART
+     [PF mascarado] ***.106.839-** = BEATRIZ JACQUES GONCALVES
+     [PF mascarado] ***.444.730-** = PATRICIA SOARES MORALES
+     [CNPJ (14)] 19378769005305 = INSTITUTO HERMES PARDINI S/A
+     [CNPJ (14)] 21946306000105 = HOSPITAL DE OLHOS RUI MARINHO LTDA
+     [CNPJ (14)] 92833946000157 = ZANDEI INDUSTRIA DE PLASTICOS LTDA
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+     [orgao/UG (6)] 114626 = SUPERINTENDENCIA ESTADUAL IBGE NO MATO GROSSO
+     [orgao/UG (6)] 170010 = SECRET. ESPECIAL DA RECEITA FEDERAL DO BRASIL
+     [orgao/UG (6)] 195019 = CIA DE DES.DOS VALES DO S.FRANC E DO PARNAIBA
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [outro (9 caracteres)] RB0000003 = PAGAMENTO DA DIVIDA INTERNA
+     [outro (9 caracteres)] RB0000034 = PAGAMENTO AO BANCO CENTRAL
+     [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
+
+========================================================================
+ARQUIVO: 20251119_Despesas_Liquidacao.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 33.899
+Colunas: 28
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o                                            33899 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     33899
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                              11        36
+   C√≥digo Unidade Gestora                             11      1840
+   C√≥digo Favorecido                                   0     19281
+   Favorecido                                          0     19238
+   C√≥digo Elemento de Despesa                          0        52
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            155906264432025NS006088 | 130024000012025NS002231 | 17010000001202
+   Data Emiss√£o                                 19/11/2025
+   C√≥digo √ìrg√£o Superior                        26000 | 22000 | 46000
+   C√≥digo Unidade Gestora                       155906 | 130024 | 170100
+   C√≥digo Favorecido                            07347607000515 | 18907676000129 | 22652918000158
+   Favorecido                                   WAGNER DE ALBUQUERQUE PINTO LTDA | IDEAL CONSERVACAO E LIMPEZA DE 
+   C√≥digo Elemento de Despesa                   39 | 37 | 40
+
+-- CLASSIFICACAO DO FAVORECIDO
+   PF mascarado                    17531  ( 51.7%)
+   CNPJ (14)                       13243  ( 39.1%)
+   orgao/UG (6)                     1655  (  4.9%)
+   sentinela (-11)                  1032  (  3.0%)
+   PJ estrangeira (EX)               306  (  0.9%)
+   outro (9 caracteres)              121  (  0.4%)
+   sentinela (-1)                     11  (  0.0%)
+
+   exemplos por tipo:
+     [CNPJ (14)] 07347607000515 = WAGNER DE ALBUQUERQUE PINTO LTDA
+     [CNPJ (14)] 18907676000129 = IDEAL CONSERVACAO E LIMPEZA DE PREDIOS LTDA
+     [CNPJ (14)] 22652918000158 = SUDESTE SERVICOS GERAIS LTDA
+     [PF mascarado] ***.343.510-** = CAROLINA RETTORE GARBIN
+     [PF mascarado] ***.441.500-** = RODRIGO DACHI SANTANA
+     [PF mascarado] ***.517.390-** = ELISABETE CRISTINA SANTANA
+     [PJ estrangeira (EX)] EXHKKYOCR = KYOCERA DOCUMENT SOLUTIONS HONG KONG LIMITED
+     [PJ estrangeira (EX)] EXMXOLMOS = MARCO ANTONIO FIGUEROA OLMOS (CENTRAL PRINT I
+     [PJ estrangeira (EX)] EXSIN0124 = ENTERPRISE SINGAPORE
+     [orgao/UG (6)] 170010 = SECRET. ESPECIAL DA RECEITA FEDERAL DO BRASIL
+     [orgao/UG (6)] 170500 = COORDENACAO-GERAL DE TESOURARIA - CGTES
+     [orgao/UG (6)] 183038 = INSTITUTO NACIONAL DA PROPRIEDADE INDUSTRIAL
+     [outro (9 caracteres)] PFUFJF648 = BOLSA - TED 13919 PROJETO ROBOTICA
+     [outro (9 caracteres)] RB0000034 = PAGAMENTO AO BANCO CENTRAL
+     [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+
+========================================================================
+ARQUIVO: 20260212_Despesas_Liquidacao.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 18.051
+Colunas: 28
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o                                            18051 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     18051
+   Data Emiss√£o                                        0         1
+   C√≥digo √ìrg√£o Superior                               4        35
+   C√≥digo Unidade Gestora                              4      1817
+   C√≥digo Favorecido                                   0      9223
+   Favorecido                                          0      8945
+   C√≥digo Elemento de Despesa                          0        51
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            170131000012026NS001140 | 420014000012026NS000839 | 42001400001202
+   Data Emiss√£o                                 12/02/2026
+   C√≥digo √ìrg√£o Superior                        46000 | 42000 | 52000
+   C√≥digo Unidade Gestora                       170131 | 420014 | 167495
+   C√≥digo Favorecido                            ***.288.638-** | ***.227.338-** | ***.310.907-**
+   Favorecido                                   CENIRA BLANCO FERNANDES LUJAN | LUIZ GUSTAVO DALLA DEA | CAMILA DE
+   C√≥digo Elemento de Despesa                   36 | -1 | MU
+
+-- CLASSIFICACAO DO FAVORECIDO
+   CNPJ (14)                       12057  ( 66.8%)
+   PF mascarado                     4197  ( 23.3%)
+   orgao/UG (6)                     1068  (  5.9%)
+   sentinela (-11)                   476  (  2.6%)
+   PJ estrangeira (EX)               210  (  1.2%)
+   outro (9 caracteres)               42  (  0.2%)
+   sentinela (-1)                      1  (  0.0%)
+
+   exemplos por tipo:
+     [PF mascarado] ***.227.338-** = LUIZ GUSTAVO DALLA DEA
+     [PF mascarado] ***.288.638-** = CENIRA BLANCO FERNANDES LUJAN
+     [PF mascarado] ***.310.907-** = CAMILA DE OLIVEIRA ANDRADE
+     [CNPJ (14)] 11255714000167 = GERALDO GOMEZ VILLARROEL
+     [CNPJ (14)] 29811993000163 = FG TECNO CENTER SERVICOS DE MANUTENCAO LTDA
+     [CNPJ (14)] 51537598000193 = BETHOSP DISTRIBUIDORA LTDA
+     [PJ estrangeira (EX)] EX1300012 = UNIAO INT. PARA PROTECAO DE NOVAS VARIEDADES 
+     [PJ estrangeira (EX)] EX9301607 = PITNEY BOWES
+     [PJ estrangeira (EX)] EX9390704 = BCS ISA INC
+     [orgao/UG (6)] 158123 = INSTITUTO FED CIENCIA TECNOL SUDESTE MG
+     [orgao/UG (6)] 158333 = INST.FED.MATO GROSSO/CAMPUS CUIABA
+     [orgao/UG (6)] 170502 = SECRETARIA DO TESOURO NACIONAL/CGTES/STN
+     [outro (9 caracteres)] PF9999902 = PLANO MEDICO - PESSOA JURIDICA
+     [outro (9 caracteres)] PFAUXFINA = PAGAMENTO DE AUXILIO FINANCEIRO A ESTUDANTES
+     [outro (9 caracteres)] RB0000050 = PAGAMENTOS PIX COM LISTA
+     [sentinela (-11)] -11 = Informa√ß√£o protegida por sigilo nos termos da
+     [sentinela (-1)] -1 = Sem informa√ß√£o
+
+========================================================================
+ARQUIVO: 20250320_Despesas_Liquidacao_EmpenhosImpactados.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 24.484
+Colunas: 8
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o + C√≥digo Empenho + C√≥digo Natureza De...   24484 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     20952
+   C√≥digo Empenho                                      0     14300
+   C√≥digo Natureza Despesa Completa                    0       615
+   Subitem                                             0       487
+   Valor Liquidado (R$)                                0     11207
+   Valor Restos a Pagar Inscritos (R$)                 0        13
+   Valor Restos a Pagar Cancelado (R$)                 0        32
+   Valor Restos a Pagar Pagos (R$)                     0         1
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            110001000012025NS004078 | 110001000012025NS004079 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE000090 | 110001000012025NE000007 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903303 | 33901414 | 33901514
+   Subitem                                      LOCACAO DE MEIOS DE TRANSPORTE | DIARIAS NO PAIS | MANUTENCAO E CO
+   Valor Liquidado (R$)                         52071,58 | -52071,58 | 152600,49
+   Valor Restos a Pagar Inscritos (R$)          0,00 | 9800000,00 | 1665000,00
+   Valor Restos a Pagar Cancelado (R$)          0,00 | 269,73 | 859,74
+   Valor Restos a Pagar Pagos (R$)              0,00
+
+-- FORMATO DOS CAMPOS NUMERICOS
+   Valor Liquidado (R$)                         decimal virgula=24484
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=24484
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=24484
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=24484
+
+   negativos encontrados:
+     Valor Liquidado (R$)                       809
+     Valor Restos a Pagar Inscritos (R$)        6
+
+========================================================================
+ARQUIVO: 20250715_Despesas_Liquidacao_EmpenhosImpactados.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 23.189
+Colunas: 8
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o + C√≥digo Empenho + C√≥digo Natureza De...   23189 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     20262
+   C√≥digo Empenho                                      0     13766
+   C√≥digo Natureza Despesa Completa                    0       564
+   Subitem                                             0       447
+   Valor Liquidado (R$)                                0     13603
+   Valor Restos a Pagar Inscritos (R$)                 0         3
+   Valor Restos a Pagar Cancelado (R$)                 0        83
+   Valor Restos a Pagar Pagos (R$)                     0         1
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            110001000012025NS012546 | 110001000012025NS012547 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE000303 | 110001000012025NE000001 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903916 | 33901414 | 33903958
+   Subitem                                      MANUTENCAO E CONSERV. DE BENS IMOVEIS | DIARIAS NO PAIS | SERVICOS
+   Valor Liquidado (R$)                         8886,02 | 1863,65 | 272987,77
+   Valor Restos a Pagar Inscritos (R$)          0,00 | -286500,00 | 286500,00
+   Valor Restos a Pagar Cancelado (R$)          0,00 | 33,02 | 23048,44
+   Valor Restos a Pagar Pagos (R$)              0,00
+
+-- FORMATO DOS CAMPOS NUMERICOS
+   Valor Liquidado (R$)                         decimal virgula=23189
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=23189
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=23189
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=23189
+
+   negativos encontrados:
+     Valor Liquidado (R$)                       1333
+     Valor Restos a Pagar Inscritos (R$)        1
+
+========================================================================
+ARQUIVO: 20251119_Despesas_Liquidacao_EmpenhosImpactados.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 37.508
+Colunas: 8
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o + C√≥digo Empenho + C√≥digo Natureza De...   37508 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     33899
+   C√≥digo Empenho                                      0     15204
+   C√≥digo Natureza Despesa Completa                    0       638
+   Subitem                                             0       492
+   Valor Liquidado (R$)                                0     14900
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0        29
+   Valor Restos a Pagar Pagos (R$)                     0         1
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            110001000012025NS021396 | 110001000012025NS021397 | 11000100001202
+   C√≥digo Empenho                               110001000012025NE001027 | 110001000012025NE000063 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33903036 | 33904710 | 33901416
+   Subitem                                      MATERIAL HOSPITALAR | TAXAS | DIARIAS NO EXTERIOR
+   Valor Liquidado (R$)                         18017,00 | 24,00 | 2164,73
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00 | 0,53 | 18,20
+   Valor Restos a Pagar Pagos (R$)              0,00
+
+-- FORMATO DOS CAMPOS NUMERICOS
+   Valor Liquidado (R$)                         decimal virgula=37508
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=37508
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=37508
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=37508
+
+   negativos encontrados:
+     Valor Liquidado (R$)                       1623
+     Valor Restos a Pagar Cancelado (R$)        1
+
+========================================================================
+ARQUIVO: 20260212_Despesas_Liquidacao_EmpenhosImpactados.csv
+MODO: mapeado
+========================================================================
+
+Linhas de dados: 21.558
+Colunas: 8
+Campos com CR residual: 0
+
+-- TESTE DE UNICIDADE
+   C√≥digo Liquida√ß√£o + C√≥digo Empenho + C√≥digo Natureza De...   21558 distintas  UNICA
+
+-- COLUNAS
+   coluna                                         vazios  distintos
+   C√≥digo Liquida√ß√£o                                   0     18051
+   C√≥digo Empenho                                      0     13380
+   C√≥digo Natureza Despesa Completa                    0       583
+   Subitem                                             0       457
+   Valor Liquidado (R$)                                0      8055
+   Valor Restos a Pagar Inscritos (R$)                 0         1
+   Valor Restos a Pagar Cancelado (R$)                 0        13
+   Valor Restos a Pagar Pagos (R$)                     0         1
+
+-- AMOSTRAS
+   C√≥digo Liquida√ß√£o                            110001000012026NS002160 | 110001000012026NS002163 | 11000100001202
+   C√≥digo Empenho                               110001000012026NE000012 | 110001000012026NE000194 | 11000100001202
+   C√≥digo Natureza Despesa Completa             33901414 | 33903703 | 33903096
+   Subitem                                      DIARIAS NO PAIS | VIGILANCIA OSTENSIVA | MATERIAL DE CONSUMO - PAG
+   Valor Liquidado (R$)                         846,59 | 227013,30 | -1491,66
+   Valor Restos a Pagar Inscritos (R$)          0,00
+   Valor Restos a Pagar Cancelado (R$)          0,00 | 5126,25 | 1647,24
+   Valor Restos a Pagar Pagos (R$)              0,00
+
+-- FORMATO DOS CAMPOS NUMERICOS
+   Valor Liquidado (R$)                         decimal virgula=21558
+   Valor Restos a Pagar Inscritos (R$)          decimal virgula=21558
+   Valor Restos a Pagar Cancelado (R$)          decimal virgula=21558
+   Valor Restos a Pagar Pagos (R$)              decimal virgula=21558
+
+   negativos encontrados:
+     Valor Liquidado (R$)                       511
+     Valor Restos a Pagar Cancelado (R$)        1
 

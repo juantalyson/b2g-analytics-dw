@@ -64,5 +64,7 @@ Credenciais ficam em `.env`, também ignorado. O repositório contém
    Em 21/08/2026, arquivos de 31/07/2026 em diante retornavam HTTP 403.
 2. **Mutabilidade retroativa.** Ver ADR 002. O recorte reflete o
    estado da fonte na data do download.
-3. **Escopo de fases.** Liquidação está fora do modelo (ADR 008).
-   O lead time cobre empenho → pagamento apenas.
+3. **Perfilamento pendente da liquidação.** `Liquidacao` e
+   `Liquidacao_EmpenhosImpactados` entraram no escopo em 22/08/2026
+   (ADR 008), mas ainda não foram perfilados. O lead time decomposto
+   em empenho → liquidação → pagamento depende desse passo.

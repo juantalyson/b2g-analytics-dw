@@ -59,7 +59,10 @@ Validado: 64, 19, 35 e 9 colunas (sempre +1 pelo `_arquivo_origem`).
 
 1. Investigar as duplicatas de `(codigo_empenho, sequencial)` — o que
    difere entre as linhas repetidas?
-2. Escrever o script de carga: extrair → `COPY` → marcar origem →
+2. Perfilar `Liquidacao` e `Liquidacao_EmpenhosImpactados`:
+   cabeçalhos, grão, chave candidata e formato dos valores.
+3. Escrever o DDL das duas novas tabelas de staging.
+4. Escrever o script de carga: extrair → `COPY` → marcar origem →
    limpar CSV → próximo dia.
-3. Migrar o perfilamento restante para SQL sobre a staging, em vez de
+5. Migrar o perfilamento restante para SQL sobre a staging, em vez de
    Python sobre CSV.

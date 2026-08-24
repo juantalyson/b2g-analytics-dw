@@ -117,6 +117,29 @@ como **linha própria com sinal negativo**, não como ajuste da linha
 original. Devem ser somadas, nunca filtradas. Padrão típico:
 `-600` seguido de `600` (estorno e reemissão).
 
+## staging.stg_liquidacao — pendente de perfilamento
+
+No escopo do modelo (ADR 008, decisão de 22/08/2026). O cabeçalho real
+de `Despesas_Liquidacao` **ainda não foi lido** — grão, chave natural,
+lista de colunas e formato dos valores serão preenchidos aqui depois
+do perfilamento.
+
+Único dado medido até agora: 14.456.548 bytes em 15/07/2025, 18,2% do
+pacote diário — o segundo maior arquivo, atrás só de `Pagamento`.
+
+## staging.stg_liquidacao_empenho — pendente de perfilamento
+
+No escopo do modelo (ADR 008, decisão de 22/08/2026). O cabeçalho real
+de `Despesas_Liquidacao_EmpenhosImpactados` **ainda não foi lido**.
+
+A hipótese a testar é que o grão espelhe o da ponte de pagamento
+(liquidação × empenho × natureza × subitem) e que o arquivo traga a
+medida por par, dispensando rateio — como aconteceu em
+`Pagamento_EmpenhosImpactados`. **Nada disso está confirmado.**
+
+Único dado medido até agora: 2.929.539 bytes em 15/07/2025, 3,7% do
+pacote diário.
+
 ## Coluna de controle
 
 `_arquivo_origem` — nome do CSV de origem. Não existe na fonte;
